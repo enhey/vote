@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text fx:id="hello" layoutX="39.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="79.30029296875" />
+      <TableView fx:id="vote" layoutX="171.0" layoutY="108.0" prefHeight="200.0" prefWidth="341.0">
+        <columns>
+          <TableColumn fx:id="name" prefWidth="123.0" text="姓名" />
+          <TableColumn fx:id="give" prefWidth="119.0" sortable="false" text="投票" />
+            <TableColumn fx:id="tickets" prefWidth="98.0" text="票数" />
+        </columns>
+      </TableView>
+      <Text fx:id="title" layoutX="219.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="title" wrappingWidth="135.30029296875">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="message" fill="#ed0505" layoutX="278.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" text="你一共有n票" />
+      <ComboBox fx:id="times" layoutX="14.0" layoutY="108.0" onAction="#timesAction" prefHeight="30.0" prefWidth="135.0" promptText="第n次投票" visibleRowCount="5" />
+      <Button fx:id="signout" layoutX="501.0" layoutY="24.0" mnemonicParsing="false" onAction="#signout" text="退出" />
+   </children>
+</AnchorPane>

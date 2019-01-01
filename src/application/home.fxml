@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="pan" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.homeController">
+ 
+   <children>
+      <Button fx:id="login" layoutX="217.0" layoutY="286.0" mnemonicParsing="false" onAction="#login" text="登录">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Text layoutX="119.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="帐号">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="119.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="密码">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <RadioButton fx:id="user_read" layoutX="210.0" layoutY="127.0" mnemonicParsing="false" onAction="#loginreader" text="用户" />
+      <RadioButton fx:id="user_work" layoutX="305.0" layoutY="127.0" mnemonicParsing="false" onAction="#loginwork" text="管理员" />
+      <CheckBox fx:id="rememberInfo" layoutX="319.0" layoutY="293.0" mnemonicParsing="false" text="记住密码" />
+      <TextField fx:id="user_id" layoutX="192.0" layoutY="172.0" promptText="请输入帐号" />
+      <Text fill="#f5ed0c" layoutX="204.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="登录界面">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Text>
+      <PasswordField fx:id="user_password" layoutX="192.0" layoutY="228.0" promptText="请输入密码" />
+      <Text fx:id="judeId" fill="#f80202" layoutX="407.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="136.30029296875" />
+      <Text fx:id="judePassword" fill="#fc0505" layoutX="407.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="136.30029296875" />
+   </children>
+</AnchorPane>
