@@ -29,7 +29,11 @@ import javafx.scene.control.RadioButton;
 import javafx.scene.control.PasswordField;
 
 import javafx.scene.control.CheckBox;
-
+/**
+ * 
+ * @author 赖志卿
+ *2019年1月2日下午1:27:37
+ */
 public class homeController implements Initializable {
 	@FXML
 	private AnchorPane pan;

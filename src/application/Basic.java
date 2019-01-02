@@ -12,7 +12,11 @@ import javax.xml.ws.AsyncHandler;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-
+/**
+ * 
+ * @author 赖志卿
+ *2019年1月2日下午1:27:30
+ */
 public class Basic {
 	String id;
 	static Connection con;
